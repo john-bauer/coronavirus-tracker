@@ -14,8 +14,10 @@
     "bulma-helpers": "^0.3.10",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
+    "mapbox-gl": "^1.8.1",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0",
+    "vue-mapbox": "^0.4.1",
     "vue-router": "^3.1.5",
     "vue-simple-spinner": "^1.2.10",
     "vuex": "^3.1.2"
