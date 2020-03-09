@@ -49,7 +49,7 @@
         <option value="Jordan">Jordan</option>
         <option value="Kuwait">Kuwait</option>
         <option value="Latvia">Latvia</option>
-        <option value="US">Lebanon</option>
+        <option value="Lebanon">Lebanon</option>
         <option value="Liechtenstein">Liechtenstein</option>
         <option value="Luxembourg">Luxembourg</option>
         <option value="Macau">Macau</option>
