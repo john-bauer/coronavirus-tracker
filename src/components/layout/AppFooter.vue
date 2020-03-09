@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>🦠 Covid-19 Tracker</strong> by
+        <strong>🦠 Coronavirus Tracker</strong> by
         <a href="https://johnbauer.me">John Bauer</a>. The source code is
         licensed
         <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The

@@ -6,15 +6,12 @@
         :to="{ path: '/' }"
         class="has-text-weight-bold has-text-black"
       >
-        🦠 Covid-19 Tracker
+        🦠 Coronavirus Tracker
       </b-navbar-item>
     </template>
     <template slot="end">
       <b-navbar-item tag="router-link" :to="{ name: 'About' }">
         About
-      </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ name: 'Resources' }">
-        Resources
       </b-navbar-item>
     </template>
   </b-navbar>
