@@ -8,7 +8,7 @@ To present data from the Mapping 2019-nCoV study in some different and potential
 
 
 ## Try it out
-You can try a demo at [https://quizzical-golick-aa0661.netlify.com/](https://quizzical-golick-aa0661.netlify.com/)
+You can try a demo at [https://coronavirus-tracker-demo.netlify.com/](https://coronavirus-tracker-demo.netlify.com/)
 
 ## Installations Required
 You'll need a recent installation of [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/).
@@ -16,7 +16,7 @@ You'll need a recent installation of [Node](https://nodejs.org/en/) and [Yarn](h
 ## Getting Started
 1. Clone the Repository:
 ```
-git clone https://github.com/john-bauer/vue-charts
+git clone https://github.com/john-bauer/coronavirus-tracker
 ```
 2. cd into the project:
 ```
