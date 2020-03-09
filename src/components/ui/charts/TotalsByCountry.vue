@@ -114,6 +114,7 @@ export default {
     return {
       country: "Mainland China",
       loaded: false,
+      // this will throw an error, but only way to get reactive charts working
       chartData: null,
       chartOptions: {
         scales: {

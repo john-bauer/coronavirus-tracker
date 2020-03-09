@@ -1,17 +1,18 @@
 <template>
   <section class="section">
-    <div class="container">
-      <ChartsList />
-    </div>
+    <AppDashboard />
+    <ChartsList />
   </section>
 </template>
 
 <script>
+import AppDashboard from "@/components/pages/home/AppDashboard.vue";
 import ChartsList from "@/components/pages/home/ChartsList.vue";
 
 export default {
   name: "Home",
   components: {
+    AppDashboard,
     ChartsList
   }
 };
