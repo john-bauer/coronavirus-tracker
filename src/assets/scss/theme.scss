@@ -1,0 +1,27 @@
+// This file is for overriding default bulma scss variables.
+
+
+/* -----------------------------
+         TITLE
+------------------------------*/
+$title-family: $family-alt;
+$title-size: $size-2;
+
+/* -----------------------------
+         SUBTITLE
+------------------------------*/
+$subtitle-line-height: 1.5;
+$subtitle-size: $size-6;
+
+/* -----------------------------
+          NAVBAR
+------------------------------*/
+$navbar-item-color: $grey;
+$navbar-item-hover-color: $black;
+$navbar-item-active-color: $black;
+$navbar-item-hover-background-color: transparent;
+
+
+/*------------------------------
+            FOOTER
+-------------------------------*/

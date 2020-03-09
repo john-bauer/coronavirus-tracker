@@ -1,13 +1,24 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="-layout-main-wrapper">
+    <div class="-layout-main-container">
+      <AppNavbar />
+      <router-view />
     </div>
-    <router-view />
+    <AppFooter class="-layout-footer" />
   </div>
 </template>
 
-<script></script>
+<script>
+import AppNavbar from "@/components/layout/AppNavbar.vue";
+import AppFooter from "@/components/layout/AppFooter.vue";
+
+export default {
+  name: "app",
+  components: {
+    AppNavbar,
+    AppFooter
+  }
+};
+</script>
 
 <style lang="scss"></style>
