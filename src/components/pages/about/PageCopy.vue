@@ -31,12 +31,19 @@
           Multiline chart for historical changes in cases, confirmed, deaths.
           (global)
         </li>
+        <li>
+          Multiline chart for historical changes in cases, confirmed, deaths.
+          (by country)
+        </li>
         <li>Implement Mapbox GL with hotspots by location</li>
         <li>Add resources page to study, CDC info, etc.</li>
         <li>Refactor snapshots</li>
         <li>
           Write util functions for getting countries, counting confirmed,
           recovered, deaths, etc.
+        </li>
+        <li>
+          Add favicon
         </li>
       </ul>
     </div>
