@@ -1,19 +1,18 @@
 <template>
   <section class="section">
-    <ChartsList />
-    <WorldwideTotals />
+    <div class="container">
+      <ChartsList />
+    </div>
   </section>
 </template>
 
 <script>
-import WorldwideTotals from "@/components/ui/charts/WorldwideTotals.vue";
 import ChartsList from "@/components/pages/home/ChartsList.vue";
 
 export default {
   name: "Home",
   components: {
-    ChartsList,
-    WorldwideTotals
+    ChartsList
   }
 };
 </script>
