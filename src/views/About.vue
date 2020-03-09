@@ -13,6 +13,7 @@ import PageCopy from "@/components/pages/about/PageCopy.vue";
 
 export default {
   name: "About",
+  title: "Coronavirus Tracker | About",
   components: {
     PageCopy
   }

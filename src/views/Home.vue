@@ -9,6 +9,7 @@ import AppDashboard from "@/components/pages/home/AppDashboard.vue";
 
 export default {
   name: "Home",
+  title: "Coronavirus Tracker | Home",
   components: {
     AppDashboard
   }
