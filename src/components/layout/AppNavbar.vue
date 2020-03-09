@@ -13,6 +13,9 @@
       <b-navbar-item tag="router-link" :to="{ name: 'About' }">
         About
       </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ name: 'Resources' }">
+        Resources
+      </b-navbar-item>
     </template>
   </b-navbar>
 </template>
