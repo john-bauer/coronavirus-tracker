@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div v-if="loaded === true">total deaths: {{ totalDeaths }}</div>
+    <div v-if="loaded === true" class="has-text-centered">
+      <p class="title">{{ numberWithCommas(totalDeaths) }}</p>
+      <p class="subtitle is-size-7 is-uppercase">Deaths</p>
+    </div>
     <div v-if="loaded === false"><Spinner /></div>
   </div>
 </template>
@@ -21,6 +24,9 @@ export default {
     ...mapState("coronavirus", ["coronavirusData"])
   },
   methods: {
+    numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    },
     populateData() {
       this.totalDeaths = this.coronavirusData.deaths.latest;
       this.loaded = true;
