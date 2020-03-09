@@ -1,7 +1,12 @@
 <template>
   <div>
     <b-field class="-selectors">
-      <b-select v-model="country" @input="handleSubmit">
+      <b-select
+        v-model="country"
+        @input="handleSubmit"
+        size="is-small"
+        class="-justify-center-mobile"
+      >
         <option value="Afghanistan">Afghanistan</option>
         <option value="Algeria">Algeria</option>
         <option value="Argentina">Argentina</option>
@@ -193,4 +198,10 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@media only screen and (max-width: 768px) {
+  .-justify-center-mobile {
+    text-align: center;
+  }
+}
+</style>
