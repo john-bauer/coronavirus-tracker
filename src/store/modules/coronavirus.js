@@ -9,7 +9,7 @@ const state = {
 
 const mutations = {
   SET_CORONAVIRUS_DATA(state, payload) {
-    window.console.log(payload);
+    // window.console.log(payload);
     state.coronavirusData = payload;
   },
   SET_STATUS_LOADING(state, payload) {

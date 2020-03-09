@@ -149,7 +149,6 @@ export default {
         i < this.coronavirusData.confirmed.locations.length;
         i++
       ) {
-        console.log(this.coronavirusData.confirmed.locations[i].country);
         if (this.coronavirusData.confirmed.locations[i].country === country) {
           totalConfirmed += this.coronavirusData.confirmed.locations[i].latest;
           totalRecovered += this.coronavirusData.recovered.locations[i].latest;
