@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="loaded === true">total confirmed: {{ totalRecovered }}</div>
+    <div v-if="loaded === true">total recovered: {{ totalRecovered }}</div>
     <div v-if="loaded === false"><Spinner /></div>
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     populateData() {
-      this.totalConfirmed = this.coronavirusData.confirmed.latest;
+      this.totalRecovered = this.coronavirusData.recovered.latest;
       this.loaded = true;
     }
   },
