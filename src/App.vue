@@ -17,6 +17,16 @@ export default {
   components: {
     AppNavbar,
     AppFooter
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    }
+  },
+  watch: {
+    $route: function() {
+      this.scrollToTop();
+    }
   }
 };
 </script>
