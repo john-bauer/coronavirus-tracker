@@ -22,7 +22,7 @@ export default {
     return {
       loaded: false,
       chartData: {
-        labels: ["Confirmed Cases", "Recoveries", "Deaths"],
+        labels: ["CONFIRMED", "RECOVERED", "DEATHS"],
         datasets: [
           {
             backgroundColor: ["#FFE57F", "#B9F6CA", "#FF8A80"],
@@ -31,6 +31,17 @@ export default {
         ]
       },
       chartOptions: {
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem, data) {
+              var value = data.datasets[0].data[tooltipItem.index];
+              value = value.toString();
+              value = value.split(/(?=(?:...)*$)/);
+              value = value.join(",");
+              return value;
+            }
+          }
+        },
         scales: {
           yAxes: [
             {

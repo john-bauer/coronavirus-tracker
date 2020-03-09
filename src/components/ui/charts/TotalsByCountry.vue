@@ -117,6 +117,17 @@ export default {
       // this will throw an error, but only way to get reactive charts working
       chartData: null,
       chartOptions: {
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem, data) {
+              var value = data.datasets[0].data[tooltipItem.index];
+              value = value.toString();
+              value = value.split(/(?=(?:...)*$)/);
+              value = value.join(",");
+              return value;
+            }
+          }
+        },
         scales: {
           yAxes: [
             {
@@ -160,7 +171,7 @@ export default {
     },
     fillData(country) {
       this.chartData = {
-        labels: ["Confirmed", "Recovered", "Deaths"],
+        labels: ["CONFIRMED", "RECOVERED", "DEATHS"],
         datasets: [
           {
             backgroundColor: ["#FFE57F", "#B9F6CA", "#FF8A80"],

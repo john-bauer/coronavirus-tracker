@@ -1,8 +1,16 @@
 <template>
   <div>
     <div v-if="loaded === true" class="has-text-centered">
-      <p class="title">{{ numberWithCommas(totalRecovered) }}</p>
-      <p class="subtitle is-size-7 is-uppercase">Recovered</p>
+      <p
+        class="title has-margin-bottom-30 has-margin-top-15 is-size-2-desktop has-text-weight-light"
+      >
+        {{ numberWithCommas(totalRecovered) }}
+      </p>
+      <p
+        class="subtitle is-size-7 is-uppercase is-family-condensed has-text-weight-semibold"
+      >
+        Recovered
+      </p>
     </div>
     <div v-if="loaded === false"><Spinner /></div>
   </div>
