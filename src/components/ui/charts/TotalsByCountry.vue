@@ -157,9 +157,6 @@ export default {
       }
       return [totalConfirmed, totalRecovered, totalDeaths];
     },
-    getRandomInt() {
-      return Math.floor(Math.random() * (50 - 5 + 1)) + 5;
-    },
     fillData(country) {
       this.chartData = {
         labels: ["Confirmed", "Recovered", "Deaths"],
