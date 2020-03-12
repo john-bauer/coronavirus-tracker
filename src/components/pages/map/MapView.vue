@@ -21,7 +21,6 @@ export default {
   methods: {
     ...mapActions("coronavirus", ["getAllCoronavirusData"]),
     convertCoronavirusData() {
-      console.log(this.coronavirusData);
       let dataSet = [];
       for (
         let i = 0;
