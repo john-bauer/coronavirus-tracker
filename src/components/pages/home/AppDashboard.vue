@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="tile is-ancestor">
-      <div class="tile is-parent">
+      <div class="tile is-vertical is-parent">
         <div class="tile is-child has-background-white-bis notification">
           <p class="title is-spaced has-text-centered-mobile is-size-4-mobile">
             Totals By Country

@@ -10,6 +10,9 @@
       </b-navbar-item>
     </template>
     <template slot="end">
+      <!-- <b-navbar-item tag="router-link" :to="{ name: 'Map' }">
+        Map
+      </b-navbar-item> -->
       <b-navbar-item tag="router-link" :to="{ name: 'About' }">
         About
       </b-navbar-item>

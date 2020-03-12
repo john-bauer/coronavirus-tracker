@@ -25,6 +25,7 @@
         <option value="Cameroon">Cameroon</option>
         <option value="Canada">Canada</option>
         <option value="Chile">Chile</option>
+        <option value="China">China</option>
         <option value="Colombia">Colombia</option>
         <option value="Costa Rica">Costa Rica</option>
         <option value="Croatia">Croatia</option>
@@ -58,7 +59,6 @@
         <option value="Liechtenstein">Liechtenstein</option>
         <option value="Luxembourg">Luxembourg</option>
         <option value="Macau">Macau</option>
-        <option value="Mainland China">Mainland China</option>
         <option value="Malaysia">Malaysia</option>
         <option value="Malta">Malta</option>
         <option value="Martinique">Martinique</option>
@@ -117,7 +117,7 @@ export default {
   name: "TotalsByCountry",
   data() {
     return {
-      country: "Mainland China",
+      country: "China",
       loaded: false,
       // this will throw an error, but only way to get reactive charts working
       chartData: null,
