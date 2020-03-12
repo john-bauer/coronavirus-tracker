@@ -77,12 +77,10 @@ export default {
     var map = this.map;
 
     map.on("load", () => {
-      console.log(GeoJSON.parse(this.sampleData, { Point: ["lat", "lng"] }));
       map.addControl(new mapboxgl.FullscreenControl());
       let myData = GeoJSON.parse(this.convertCoronavirusData(), {
         Point: ["lat", "lng"]
       });
-      console.log(myData);
       map.addSource("point", {
         type: "geojson",
         data: myData
