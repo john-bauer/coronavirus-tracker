@@ -12,6 +12,12 @@
     <template slot="end">
       <b-navbar-item tag="router-link" :to="{ name: 'Map' }">
         Map
+        <b-tag
+          class="has-margin-left-5"
+          type="is-warning is-rounded"
+          size="small"
+          >in progress</b-tag
+        >
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ name: 'About' }">
         About
