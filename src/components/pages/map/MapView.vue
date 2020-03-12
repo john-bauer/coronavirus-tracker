@@ -12,30 +12,7 @@ export default {
   data: function() {
     return {
       map: null,
-      locations: null,
-      sampleData: [
-        {
-          name: "Location A",
-          category: "Store",
-          street: "Market",
-          lat: 39.984,
-          lng: -75.343
-        },
-        {
-          name: "Location B",
-          category: "House",
-          street: "Broad",
-          lat: 39.284,
-          lng: -75.833
-        },
-        {
-          name: "Location C",
-          category: "Office",
-          street: "South",
-          lat: 39.123,
-          lng: -74.534
-        }
-      ]
+      locations: null
     };
   },
   computed: {
@@ -44,6 +21,7 @@ export default {
   methods: {
     ...mapActions("coronavirus", ["getAllCoronavirusData"]),
     convertCoronavirusData() {
+      console.log(this.coronavirusData);
       let dataSet = [];
       for (
         let i = 0;
@@ -53,6 +31,7 @@ export default {
         dataSet.push({
           country: this.coronavirusData.confirmed.locations[i].country,
           province: this.coronavirusData.confirmed.locations[i].province,
+          latest: this.coronavirusData.confirmed.locations[i].latest,
           lat: parseInt(
             this.coronavirusData.confirmed.locations[i].coordinates.lat
           ),
@@ -71,7 +50,7 @@ export default {
     mapboxgl.accessToken = process.env.VUE_APP_MAPBOXACCESSTOKEN;
     this.map = new mapboxgl.Map({
       container: "map",
-      style: "mapbox://styles/mapbox/dark-v9",
+      style: "mapbox://styles/mapbox/light-v9",
       zoom: 2
     });
     var map = this.map;
@@ -91,7 +70,7 @@ export default {
         source: "point",
         paint: {
           "circle-radius": 10,
-          "circle-color": "#3887be",
+          "circle-color": "hsl(14,  100%, 53%)",
           "circle-opacity": 0.25
         }
       });
