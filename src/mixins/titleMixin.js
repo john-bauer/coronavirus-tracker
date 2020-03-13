@@ -6,7 +6,7 @@ function getTitle(vm) {
 }
 
 export default {
-  created() {
+  mounted() {
     const title = getTitle(this);
     if (title) {
       document.title = title;

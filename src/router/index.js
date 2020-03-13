@@ -19,11 +19,6 @@ const routes = [
     path: "/resources",
     name: "Resources",
     component: () => import("../views/Resources.vue")
-  },
-  {
-    path: "/map",
-    name: "Map",
-    component: () => import("../views/Map.vue")
   }
 ];
 
