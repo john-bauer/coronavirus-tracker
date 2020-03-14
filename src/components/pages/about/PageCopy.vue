@@ -42,8 +42,7 @@
           Write util functions for getting countries, counting confirmed,
           recovered, deaths, etc.
         </li>
-        <li>Diagnose & fix tile padding discrepancy</li>
-        <li>Allow fullscreen map view on mobile</li>
+        <li><strike>Diagnose & fix tile padding discrepancy</strike></li>
         <li>improve zoom behavior on map view</li>
       </ul>
     </div>
