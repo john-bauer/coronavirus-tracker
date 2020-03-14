@@ -54,6 +54,8 @@ export default {
         let myData = GeoJSON.parse(this.convertCoronavirusData(), {
           Point: ["lat", "lng"]
         });
+        map.dragRotate.disable();
+        map.touchZoomRotate.disableRotation();
         map.addSource("point", {
           type: "geojson",
           data: myData
