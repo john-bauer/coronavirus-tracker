@@ -28,7 +28,7 @@
       </div>
       <div class="tile is-vertical">
         <p class="title has-text-centered-mobile is-size-4-mobile">
-          Map View
+          Map View <b-tag type="is-warning">In Progress</b-tag>
         </p>
         <MapTile />
       </div>
