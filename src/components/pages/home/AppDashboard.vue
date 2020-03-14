@@ -14,7 +14,7 @@
       </div>
       <div class="tile is-9 is-vertical is-parent">
         <p class="title is-spaced has-text-centered-mobile is-size-4-mobile">
-          Totals By Country
+          Worldwide Totals
         </p>
         <WorldwideTotals />
       </div>
