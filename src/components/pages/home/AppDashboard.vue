@@ -1,5 +1,17 @@
 <template>
   <div>
+    <b-notification type="is-danger"
+      ><b
+        >Unfortunately, we're having some trouble with our data provider. The
+        tracker will be back up and running once the latest Johns Hopkins upload
+        is resolved. More info
+        <a
+          href="https://github.com/CSSEGISandData/COVID-19/issues/686#ref-issue-580981604"
+          target="_blank"
+          >here</a
+        >.</b
+      ></b-notification
+    >
     <div class="tile is-ancestor">
       <div class="tile is-3 is-vertical is-parent">
         <div class="tile notification is-child is-warning">
