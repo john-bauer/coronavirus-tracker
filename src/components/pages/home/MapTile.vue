@@ -68,19 +68,20 @@ export default {
             "circle-radius": {
               property: "latest",
               stops: [
-                [0, 2],
-                [1000, 10]
+                [0, 3],
+                [10000, 15]
               ]
             },
 
             "circle-color": {
               property: "latest",
               stops: [
-                [0, "#f1f075"],
-                [1000, "#e55e5e"]
+                [0, "hsl(48,  100%, 67%)"],
+                [500, "hsl(14,  100%, 53%)"],
+                [2000, "hsl(348, 100%, 61%)"]
               ]
             },
-            "circle-opacity": 0.5
+            "circle-opacity": 0.25
           }
         });
       });
