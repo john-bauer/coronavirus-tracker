@@ -82,10 +82,6 @@ export default {
                 [{ zoom: 22, value: 1 }, 9],
                 [{ zoom: 22, value: 70000 }, 100]
               ]
-              // stops: [
-              //   [0, 3],
-              //   [10000, 15]
-              // ]
             },
 
             "circle-color": {
@@ -98,6 +94,41 @@ export default {
             },
             "circle-opacity": 0.25
           }
+        });
+        // HOW IT WORKS
+        // https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click
+        this.map.on("click", "point", e => {
+          var coordinates = e.features[0].geometry.coordinates.slice();
+          let popupContent = `
+          <div class="-mapbox-popup"
+            <p class="subtitle has-text-grey is-size-7">${
+              e.features[0].properties.province
+            }</p>
+            <p class="title is-size-4">${e.features[0].properties.country}</p>
+            <p class="subtitle"><span class="is-size-3 -orange">${e.features[0].properties.latest
+              .toString()
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+              </span>
+              </p>
+            </div>
+            `;
+
+          while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+          }
+
+          new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(popupContent)
+            .addTo(this.map);
+        });
+        this.map.on("mouseenter", "point", function() {
+          map.getCanvas().style.cursor = "pointer";
+        });
+
+        // Change it back to a pointer when it leaves.
+        this.map.on("mouseleave", "point", function() {
+          map.getCanvas().style.cursor = "";
         });
       });
     }
@@ -116,4 +147,8 @@ export default {
   width: 100%;
   height: 450px;
 }
+
+// .mapboxgl-popup {
+//   max-width: 400px;
+// }
 </style>
