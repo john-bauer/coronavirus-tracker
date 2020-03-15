@@ -43,7 +43,7 @@
           recovered, deaths, etc.
         </li>
         <li><strike>Diagnose & fix tile padding discrepancy</strike></li>
-        <li>improve zoom behavior on map view</li>
+        <li><strike>improve zoom behavior on map view</strike></li>
       </ul>
     </div>
     <br />
