@@ -71,15 +71,15 @@ export default {
               property: "latest",
               stops: [
                 [{ zoom: 0, value: 0 }, 0],
-                [{ zoom: 0, value: 1 }, 5],
+                [{ zoom: 0, value: 1 }, 3],
                 [{ zoom: 0, value: 70000 }, 10],
 
                 [{ zoom: 10, value: 0 }, 0],
-                [{ zoom: 10, value: 1 }, 15],
+                [{ zoom: 10, value: 1 }, 20],
                 [{ zoom: 10, value: 70000 }, 100],
 
                 [{ zoom: 22, value: 0 }, 0],
-                [{ zoom: 22, value: 1 }, 10],
+                [{ zoom: 22, value: 1 }, 14],
                 [{ zoom: 22, value: 70000 }, 100]
               ]
             },
