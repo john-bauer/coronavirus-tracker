@@ -48,7 +48,7 @@ export default {
       this.map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/light-v9",
-        zoom: 1
+        zoom: 0
       });
       this.map.on("load", () => {
         var map = this.map;
@@ -70,16 +70,29 @@ export default {
             "circle-radius": {
               property: "latest",
               stops: [
-                [0, 3],
-                [10000, 15]
+                [{ zoom: 0, value: 0 }, 0],
+                [{ zoom: 0, value: 1 }, 3],
+                [{ zoom: 0, value: 70000 }, 10],
+
+                [{ zoom: 10, value: 0 }, 0],
+                [{ zoom: 10, value: 1 }, 9],
+                [{ zoom: 10, value: 70000 }, 100],
+
+                [{ zoom: 22, value: 0 }, 0],
+                [{ zoom: 22, value: 1 }, 9],
+                [{ zoom: 22, value: 70000 }, 100]
               ]
+              // stops: [
+              //   [0, 3],
+              //   [10000, 15]
+              // ]
             },
 
             "circle-color": {
               property: "latest",
               stops: [
                 [0, "hsl(48,  100%, 67%)"],
-                [500, "hsl(14,  100%, 53%)"],
+                [200, "hsl(14,  100%, 53%)"],
                 [2000, "hsl(348, 100%, 61%)"]
               ]
             },
