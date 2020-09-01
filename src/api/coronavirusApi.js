@@ -1,5 +1,5 @@
 import axios from "axios";
-let baseUrl = "https://coronavirus-tracker-api.herokuapp.com";
+let baseUrl = "https://coronavirus-tracker-api.herokuapp.com/v2";
 
 const coronavirusApi = {
   getData(category) {
